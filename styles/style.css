@@ -22,6 +22,7 @@ header
 nav 
 {
     display: block;
+    position: relative;
 }
 a 
 {
