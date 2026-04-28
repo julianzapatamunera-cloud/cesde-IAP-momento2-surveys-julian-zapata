@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto</title>
+</head>
+<body>
+    <h2>Formulario de contacto</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <br>
+                <input type="text" id="nombre" name="nombre" required placeholder="Pepito Perez" min="6" max="20">
+                <br>
+                <label for="email">Correo electrónico:</label>
+                <br>
+                <input type="email" id="email" name="email" required placeholder="ejemplo@cesde.net">
+
+                <p>Tipo de usuario:</p>
+                <label for="estudiante">Estudiante</label>
+                <input type="radio" id="estudiante" name="tipo" value="estudiante">
+                
+                <label for="desarrollador">Profesor</label>
+                <input type="radio" id="desarrollador" name="tipo" value="desarrollador">                  
+                
+                <label for="otro">Otro</label>
+                <input type="radio" id="otro" name="tipo" value="otro">
+
+                <p>Temas de interés:</p>
+                <label>Inteligencia Artificial</label>
+                <input type="checkbox" name="intereses" value="ia">
+                    
+                <label>Desarrollo Web </label>
+                <input type="checkbox" name="intereses" value="web">
+
+                <label>Front End</label>
+                <input type="checkbox" name="intereses" value="Front End">
+
+                <label>Backend</label>
+                <input type="checkbox" name="intereses" value="backend">
+
+                <p>Lenguaje favorito de desarrollo:</p>
+                <label for="lenguaje">Selecciona tu preferido:</label>
+                <select id="lenguaje" name="lenguaje">
+                    <option value="java">Java</option>
+                    <option value="python">Python</option>
+                    <option value="js">JavaScript</option>
+                </select>
+                <p>Por favor dejanos tus comentarios:</p>
+                <label for="mensaje"></label>
+                <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+                <br>
+                <button type="submit">Enviar</button>
+
+            </form>
+</body>
+</html>
