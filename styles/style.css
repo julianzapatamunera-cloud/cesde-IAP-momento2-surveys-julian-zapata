@@ -5,14 +5,48 @@ body
     min-height: auto;
     background: linear-gradient(#ADD8E6, #B0E0E6, #FFFFFF);
     color: #1f2933;
-    font-family:'Courier New', Courier, monospace
-    line-height: 1.6;
+    font-family: cursive, sans-serif;
+    line-height: 1;
 }
-header {
+header 
+{
     position: sticky;
-    top: 0;
-    padding: 22px;
-    background-color: #12355b;
+    top: 10px;
+    padding: 15px;
+    background-color: #00008B;
     color: #ffffff;
-    
+    border-radius: 20px;
+    text-align: center;
+    margin: auto;
+}
+nav 
+{
+    display: block;
+}
+a 
+{
+    display: inline-block;
+    margin: 0;
+    padding: 10px 20px;
+    background-color: #B0E0E6;
+    color: #00008B;
+    text-decoration: none;
+    border-radius: 5px;
+    align-items: center;
+}
+footer 
+{
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #00008B;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 20px;
+}
+button 
+{
+    padding: 10px 20px;
+    background-color: #B0E0E6;
+    color: #00008B;
+    border-radius: 10px;   
 }
