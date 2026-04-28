@@ -6,12 +6,15 @@
     <title>Formulario de contacto</title>
 </head>
 <body>
-    <h2>Formulario de contacto</h2>
+    <fieldset>
+        <legend><h2>Formulario de contacto</h2></legend>
             <form>
                 <label for="nombre">Nombre:</label>
                 <br>
                 <input type="text" id="nombre" name="nombre" required placeholder="Pepito Perez" min="6" max="20">
-                <br>
+
+                <p></p>
+
                 <label for="email">Correo electrónico:</label>
                 <br>
                 <input type="email" id="email" name="email" required placeholder="ejemplo@cesde.net">
@@ -39,12 +42,14 @@
                 <label>Backend</label>
                 <input type="checkbox" name="intereses" value="backend">
 
-                <p>Lenguaje favorito de desarrollo:</p>
-                <label for="lenguaje">Selecciona tu preferido:</label>
+                <p></p>
+
+                <label for="lenguaje">Lenguaje favorito de desarrollo:</label>
                 <select id="lenguaje" name="lenguaje">
                     <option value="java">Java</option>
                     <option value="python">Python</option>
                     <option value="js">JavaScript</option>
+                    <option value="otro">Otro</option>
                 </select>
                 <p>Por favor dejanos tus comentarios:</p>
                 <label for="mensaje"></label>
@@ -53,5 +58,6 @@
                 <button type="submit">Enviar</button>
 
             </form>
+    </fieldset>
 </body>
 </html>
