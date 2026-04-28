@@ -4,59 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de contacto</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        body
+        {
+            margin: 20px;
+            border-radius: 20px;
+            min-height: auto;
+            background: linear-gradient(#FFFACD, #FFFFE0);
+            color: #1f2933;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+        fieldset
+        {
+            border-radius: 15px;
+            border-color: #DAA520;
+            border:solid 4px #DAA520;
+        }
+        h2
+        {
+            font-size:xx-large;
+            text-align: center;
+            color: black;
+        }
+        footer
+        {
+            
+            display:block;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #DAA520;
+            border-radius: 15px;
+            align-items: center;
+            text-align: center;
+        }
+        .fonttype{
+            font-family: cursive, sans-serif;
+        }
+        option{
+            font-family: cursive;
+        }
+        input{
+            border-radius: 5px;
+            border-color: #FAFAD2;
+        }
+        
+    </style>
 </head>
 <body>
     <fieldset>
-        <legend><h2>Formulario de contacto</h2></legend>
+        <legend><h2 class="fonttype">Formulario de contacto</h2></legend>
             <form>
-                <label for="nombre">Nombre:</label>
+                <label for="nombre" class="fonttype">Nombre:</label>
                 <br>
                 <input type="text" id="nombre" name="nombre" required placeholder="Pepito Perez" min="6" max="20">
 
                 <p></p>
 
-                <label for="email">Correo electrónico:</label>
+                <label for="email" class="fonttype">Correo electrónico:</label>
                 <br>
                 <input type="email" id="email" name="email" required placeholder="ejemplo@cesde.net">
 
-                <p>Tipo de usuario:</p>
-                <label for="estudiante">Estudiante</label>
+                <p class="fonttype">Tipo de usuario:</p>
+                <label for="estudiante" class="fonttype">Estudiante</label>
                 <input type="radio" id="estudiante" name="tipo" value="estudiante">
                 
-                <label for="desarrollador">Profesor</label>
+                <label for="desarrollador" class="fonttype">Profesor</label>
                 <input type="radio" id="desarrollador" name="tipo" value="desarrollador">                  
                 
-                <label for="otro">Otro</label>
+                <label for="otro" class="fonttype">Otro</label>
                 <input type="radio" id="otro" name="tipo" value="otro">
 
-                <p>Temas de interés:</p>
-                <label>Inteligencia Artificial</label>
+                <p class="fonttype">Temas de interés:</p>
+                <label class="fonttype">Inteligencia Artificial</label>
                 <input type="checkbox" name="intereses" value="ia">
                     
-                <label>Desarrollo Web </label>
+                <label class="fonttype">Desarrollo Web </label>
                 <input type="checkbox" name="intereses" value="web">
 
-                <label>Front End</label>
+                <label class="fonttype">Front End</label>
                 <input type="checkbox" name="intereses" value="Front End">
 
-                <label>Backend</label>
+                <label class="fonttype">Backend</label>
                 <input type="checkbox" name="intereses" value="backend">
 
                 <p></p>
 
-                <label for="lenguaje">Lenguaje favorito de desarrollo:</label>
+                <label for="lenguaje" class="fonttype">Lenguaje favorito de desarrollo:</label>
                 <select id="lenguaje" name="lenguaje">
                     <option value="java">Java</option>
                     <option value="python">Python</option>
                     <option value="js">JavaScript</option>
                     <option value="otro">Otro</option>
                 </select>
-                <p>Por favor dejanos tus comentarios:</p>
+                <p class="fonttype">Por favor dejanos tus comentarios:</p>
                 <label for="mensaje"></label>
-                <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+                <textarea id="mensaje" name="mensaje" rows="4" style="border-radius: 5px; border-color: #DAA520;"></textarea>
                 <br>
-                <button type="submit">Enviar</button>
+                <button type="submit" style="border-radius: 5px; border-color: #DAA520; background-color: #FAFAD2;">Enviar</button>
             </form>
     </fieldset>
 <footer>
