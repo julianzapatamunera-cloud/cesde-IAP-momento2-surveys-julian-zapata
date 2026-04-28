@@ -1,0 +1,18 @@
+body 
+{
+    margin: 20px;
+    border-radius: 20px;
+    min-height: auto;
+    background: linear-gradient(#ADD8E6, #B0E0E6, #FFFFFF);
+    color: #1f2933;
+    font-family:'Courier New', Courier, monospace
+    line-height: 1.6;
+}
+header {
+    position: sticky;
+    top: 0;
+    padding: 22px;
+    background-color: #12355b;
+    color: #ffffff;
+    
+}
